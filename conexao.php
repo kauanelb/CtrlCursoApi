@@ -1,13 +1,14 @@
 <?php
 
 //ambiente marcosvirgilio.online
-$servername = '127.0.0.1';
-$username = 'root';
-$password = 'aluno';
+$servername = 'mysql-prog3-curso.g.aivencloud.com';
+$port = 22471;
+$username = 'avnadmin';
+$password = 'AVNS_eHvVk74tCcWeBmDOadu';
 $dbname = 'curso';
 
 // Create connection
-$con = new mysqli($servername, $username, $password, $dbname);
+$con = new mysqli($servername, $username, $password, $dbname, $port);
 
 // Check connection
 if ($con->connect_error) {
